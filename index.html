@@ -1,354 +1,680 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description]">
-    <meta name="author" content="[Your Name]">
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <header>
-      <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pink Pick Music Store| Home</title>
+	<meta name="description" content="add description">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+	<!--awesomefontIcon-->
+	<!--bootstrap-->
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<!--style-->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<!--information bar-->
+	<div class="information_bar">
+		<div class="date">
+			<time datetime="2019-04-18"> April 18, 2019
+		</div>
+		<div class="privacy_container">
+			<ul>
+				<li><a href="#">Shipping</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a class="flag" href="#"><img src="img/canFlag.png" alt="canadian flag">EN</a></li>
+			</ul>
+		</div>
 
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-        <button type="button">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul>
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
-      </nav>
+	</div>
+	<!--/ information bar-->
+	<!--header container-->
+	<header>
+		<div class="header">
+				<!--logo-->
+				<div class="logo">
+					<a href="index.html"><img src="img/logo-16.png" alt="logo"></a>
+				</div>
+				<!--/ logo-->
+				<!--information container-->
+				<div class="information_container">
+					<div class="phone">+(647) 7869402</div>
+					<div class="my_account">
+						<ul>
+							<li><a href="#"><img src="img/icons-25.png" alt="magnifying glass"></a></li>
+							<li><a class="myaccount" href="#">My account</a></li>
+							<li><a class="mycart" href="#"><img src="img/icons-26.png" alt="cart"></a></li>
+							<li><a class="mycartT" href="#">My Cart</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--/ information container-->
+		</div>
+	<!--navigation bar-->
+	<!-- The navigation menu -->
+<nav>
+		<div class="navbar">
+		  <div class="subnav">
+		    <button class="subnavbtn">PRODUCTS <i class="fa fa-caret-down"></i></button>
+		    <div class="subnav-content">
+					<a href="#guitar">Guitar</a>
+		      <a href="#bass">Bass</a>
+		      <a href="#Amps&Efects">Amps & Efects</a>
+		      <a href="#Drums">Drums</a>
+					<a href="#Recomended">Recording</a>
+					<a href="#Software">Software</a>
+					<a href="#keyboard&midi">Keyboards & MIDI</a>
+					<a href="#Mics&Wireless">Mics & Wireless</a>
+					<a href="#LiveSound">Live Sound</a>
+					<a href="#DJLighting">DJ Lighting</a>
+					<a href="#Accessories">Accessories</a>
+					<a href="#More">More</a>
+		    </div>
+		  </div>
+		  <div class="subnav">
+		    <button class="subnavbtn">OUTLETS <i class="fa fa-caret-down"></i></button>
+		    <div class="subnav-content">
+					<a href="#">Recomended</a>
+					<a href="#">Discounts</a>
+		    </div>
+		  </div>
+		  <div class="subnav">
+		    <button class="subnavbtn">LESSONS <i class="fa fa-caret-down"></i></button>
+		    <div class="subnav-content">
+					<a href="#">First Steps</a>
+					<a href="#">Video Lessons</a>
+					<a href="#">My labs</a>
+					<a href="#">Guitar Pro</a>
+					<a href="#">Power Tab</a>
+					<a href="#">Others</a>
+		    </div>
+		  </div>
+			<div class="subnav">
+		    <button class="subnavbtn">REPAIRS <i class="fa fa-caret-down"></i></button>
+		    <div class="subnav-content">
+					<a href="#">condition</a>
+					<a href="#">Pick Up</a>
+		    </div>
+		  </div>
+		</div>
+	</nav>
+	<!--/ navigation bar-->
+</header>
+<!--/ header container-->
+<!--main-->
+<main>
+	<!--/ slider-->
+	<div class="slider">
+		<!--slider element-->
+		<div class="slider01" alt="slider01">
+			<div class="overlay_black">
+				<div class="overlay_icon">
+					<img src="img/icons_png/shield.png">
+					<div class="overlay_text">
+						<h2>If we don't have it, you don't need it!</h2>
+						<p>If you can't find it here, call us. We will order it for you</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!--/slider element-->
+	</div>
+	<!--/ slider-->
+	<!--tab_selector-->
+	<div class="tab_selector">
+		<!--tab selector element-->
+		<div class="tab">
+			<a href="#ShopGuitar"></a>
+			<div>
+				<img src="img/icons_png/icon-17.png">
+				<h2>Shop Guitar</h2>
+			</div>
+		</div>
+		<!--/tab selector element-->
+		<!--tab selector element-->
+		<div class="tab">
+			<a href="#ShopDrums"></a>
+			<div>
+				<img src="img/icons_png/icon-18.png">
+				<h2>Shop Drums</h2>
+			</div>
+		</div>
+		<!--tab selector element-->
+		<!--/tab selector element-->
+		<div class="tab">
+			<a href="#ShopKeyboards"></a>
+			<div>
+				<img src="img/icons_png/icon-19.png">
+				<h2>Shop Keyboard</h2>
+			</div>
+		</div>
+		<!--tab selector element-->
+		<!--/tab selector element-->
+		<div class="tab1">
+			<a href="#ShopAccesories"></a>
+			<div>
+				<img src="img/icons_png/icon-20.png">
+				<h2>Shop Accesories</h2>
+			</div>
+		</div>
+		<!--/tab selector element-->
+	</div>
+<!--/tab_selector-->
 
-      <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
+<!--our products bricks-->
+<div class=bricks>
+<div class=background_text>
+	<div class="line">
+	<p>Guitars > <i>Electric</i></p>
+	<div class="dropdown">
+    <button class="dropbtn">Sort by:
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Brand</a>
+      <a href="#">Price</a>
+      <a href="#">Color</a>
+			<a href="#">Popularity</a>
+    </div>
+  </div>
+	</div>
+	<div class=our_product>
+	<h2>Our products</h2>
+	</div>
+</div>
+<!--/our products-->
+<!--featured product-->
+<div>
+	<div class="productList">
+		<!--Product1-->
+		<div class="Product">
+				<a href="product.html">
+				<img class="productImg" src="img/guitar01.jpg" > </a>
+			<hr class="divider">
+			<!--product information container-->
+			<div class="product_info">
+				<div class="product_text">
+					<h2 class="productTitle text_pink"> Gibson Acustic</h2>
+					<p class="product_description">LThe most highly customized Country Western in Gibson’s history.</p>
+					<h6 class="product_sku text_pink">SKU 24148853</h6>
+					<div class="product_rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+				</div>
+				</div>
+				<!---->
+				<div class="product_price">
+					<h6 class="product_discount">$250.00</h6>
+					<p class="Product_Regular text_pink">$199.00</p>
+					<button class="pink-button">
+							<a href="#mycart">Add to cart</a>
+					</button>
+				</div>
+		</div>
+		<!--end product information container-->
+	</div>
+	<!--01 -END product1-->
+	<!--Product2-->
+	<div class="Product">
+		<a href="product2.html">
+		<img class="productImg" src="img/guitar02.jpg" > </a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle text_pink"> Ibanez Electric</h2>
+				<p class="product_description">In designing the 2019 line of guitars, Ibanez was determined to restate their classic designs.</p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<h6 class="product_discount">$320.00</h6>
+				<p class="Product_Regular text_pink">$249.99</p>
+				<button class="pink-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+		</div>
+		<!--end product information container-->
+		</div>
+		<!--02 -END Full Product container-->
 
-      <!-- Additional nav links -->
 
-      <ul>
-        <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
-      </ul>
-    </header>
+	</div>
+</div>
+<!--/featured product-->
+</div>
+<!--END our products bricks-->
 
-    <main>
-      <header>
-        <h1>Sale on [Category Name]</h1>
+<!--our products beige-->
+<div class=beige>
+<!--featured product-->
+<div>
+		<div class="product_catalogue">
+			<!--Product3-->
+			<div class="Product">
+				<a href="product3.html">
+				<img class="productImg" src="img/guitar03.jpg" ></a>
+				<hr class="divider">
+				<!--product information container-->
+				<div class="product_info">
+					<div class="product_text">
+						<h2 class="productTitle"> Fender 2008</h2>
+						<p class="product_description">Over the decades, players have been continually inspired by the sound of a Strat.</p>
+						<h6 class="product_sku text_pink">SKU 24148853</h6>
+						<div class="product_rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+					</div>
+					</div>
+					<!---->
+					<div class="product_price">
+						<!-- <h6 class="product_discount">$199.00</h6> -->
+						<p class="Product_Regular">$120.00</p>
+						<button class="gray-button">
+								<a href="#mycart">Add to cart</a>
+						</button>
+					</div>
+			</div>
+			<!--end product information container-->
+			</div>
+			<!--03 -END Full Product container-->
 
-        <!-- Filtering product form -->
-        <form>
-          <h2>Filters</h2>
-          <fieldset>
-            <label for="sort">Show</label>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-          <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol>
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-            </ol>
-          </fieldset>
-        </form>
-      </header>
+			<!--04 Full Product container-->
+			<div class="Product">
+				<a href="product4.html">
+				<img class="productImg" src="img/guitar04.jpg" > </a>
+				<hr class="divider">
+				<!--product information container-->
+				<div class="product_info">
+					<div class="product_text">
+						<h2 class="productTitle"> Epiphone Red</h2>
+						<p class="product_description">LSince its introduction almost 20 years ago, The Special-II has met the needs of countless musicians with its combination of Les Paul features, great tone and affordability.</p>
+						<h6 class="product_sku text_pink">SKU 24148853</h6>
+						<div class="product_rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+					</div>
+					</div>
+					<!---->
+					<div class="product_price">
+						<!-- <h6 class="product_discount">$199.00</h6> -->
+						<p class="Product_Regular">$310.00</p>
+						<button class="gray-button">
+								<a href="#mycart">Add to cart</a>
+						</button>
+					</div>
+			</div>
+			<!--end product information container-->
+			</div>
+			<!--04 -END Full Product container-->
+		</div>		
+</div>
 
-      <section>
-        <h2>Results</h2>
+<!--featured product-->
+<div>
+	<div class="product_catalogue">
+	<!--03 Full Product container-->
+	<div class="Product">
+		<a href="product3.html">
+		<img class="productImg" src="img/guitar05.jpg" ></a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle"> B.C Rich Dark</h2>
+				<p class="product_description">Likes its namesake, the Warlock Extreme Chris Kael Electric Bass means business.</p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<!-- <h6 class="product_discount">$199.00</h6> -->
+				<p class="Product_Regular">$1,200.00</p>
+				<button class="gray-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+	</div>
+	<!--end product information container-->
+	</div>
+	<!--03 -END Full Product container-->
 
-        <div id="products">
-          <!-- Product 1 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
+	<!--04 Full Product container-->
+	<div class="Product">
+		<a href="product4.html">
+		<img class="productImg" src="img/guitar06.jpg" > </a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle"> Jackson Snow</h2>
+				<p class="product_description">The Snow model was designed by Jackson in 1976 and was popular from the moment of its release.</p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<!-- <h6 class="product_discount">$199.00</h6> -->
+				<p class="Product_Regular">$560</p>
+				<button class="gray-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+	</div>
+	<!--end product information container-->
+	</div>
+	<!--04 -END Full Product container-->
+	</div>		
+</div>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+<!--featured product-->
+<div>
+	<div class="product_catalogue">
+	<!--03 Full Product container-->
+	<div class="Product">
+		<a href="product3.html">
+		<img class="productImg" src="img/guitar02.jpg" ></a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle"> Ibanez Nucita</h2>
+				<p class="product_description">Ibanez guitars always did things their own way, bringing uniqueness and innovation to guitars in rock and many other styles.</p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<!-- <h6 class="product_discount">$199.00</h6> -->
+				<p class="Product_Regular">$99.00</p>
+				<button class="gray-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+	</div>
+	<!--end product information container-->
+	</div>
+	<!--03 -END Full Product container-->
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
+	<!--04 Full Product container-->
+	<div class="Product">
+		<a href="product4.html">
+		<img class="productImg" src="img/guitar01.jpg" > </a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle"> Gibson Clasic</h2>
+				<p class="product_description">The J-45 Cutaway acoustic-electric is Gibson’s best-selling acoustic of all time. </p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<!-- <h6 class="product_discount">$199.00</h6> -->
+				<p class="Product_Regular">$3,969.00</p>
+				<button class="gray-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+	</div>
+	<!--end product information container-->
+	</div>
+	<!--04 -END Full Product container-->
+	</div>		
+</div>
 
-          <!-- Product 2 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+<!--featured product-->
+<div>
+	<div class="product_catalogue">
+	<!--03 Full Product container-->
+	<div class="Product">
+		<a href="product3.html">
+		<img class="productImg" src="img/guitar03.jpg" ></a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle"> Fender Neo</h2>
+				<p class="product_description">Combining the look of a classic fender jazz box with some rock-and-roll attitude, the ES-235 semi-hollowbody is ready for the spotlight.</p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<!-- <h6 class="product_discount">$199.00</h6> -->
+				<p class="Product_Regular">$2,559.00</p>
+				<button class="gray-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+	</div>
+	<!--end product information container-->
+	</div>
+	<!--03 -END Full Product container-->
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
+	<!--04 Full Product container-->
+	<div class="Product">
+		<a href="product4.html">
+		<img class="productImg" src="img/guitar04.jpg" > </a>
+		<hr class="divider">
+		<!--product information container-->
+		<div class="product_info">
+			<div class="product_text">
+				<h2 class="productTitle"> Les Paul</h2>
+				<p class="product_description">his is a limited edition version of Epiphone's number one selling model available with a choice of "worn" finishes.</p>
+				<h6 class="product_sku text_pink">SKU 24148853</h6>
+				<div class="product_rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+			</div>
+			</div>
+			<!---->
+			<div class="product_price">
+				<!-- <h6 class="product_discount">$199.00</h6> -->
+				<p class="Product_Regular">$181.10</p>
+				<button class="gray-button">
+						<a href="#mycart">Add to cart</a>
+				</button>
+			</div>
+	</div>
+	<!--end product information container-->
+	</div>
+	<!--04 -END Full Product container-->
+	</div>		
+</div>
+</div>
+<!--/featured product-->
+</div>
+<!--END our products beige-->
 
-          <!-- Product 3 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-    
-          <!-- Product 4 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
+<!--Paginator-->
+<!-- <div class="pagination">
+	<a href="#">&laquo;</a>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#">&raquo;</a>
+</div> -->
+<!--/Paginator-->
 
-          <!-- Product 5 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+</main>
+<!--/main-->
+<!--Footer-->
+<div class="fotter">
+	<div class=blue_bar1>
+		<h2> Sign up for super savings to your Inbox! </h2>
+		<form >
+  Your email.
+  <input type="text" name="email">
+  <input type="submit" value="Submit" class="submit_btn">
+		</form>
+	</div>
+<!--footer links-->
+	<div class="links">
+		<div class="products_list">
+			<div class="products_list_right">
+		 <ul>
+			<li>PRODUCTS</li>
+				<ul>
+					<li><a href="#">Guitar</a></li>
+					<li><a href="#">Bass</a></li>
+					<li><a href="#">Amps & Efects</a></li>
+					<li><a href="#">Drums</a></li>
+					<li><a href="#">Recording</a></li>
+					<li><a href="#">Software</a></li>
+					<li><a href="#">Keyboards & MIDI</a></li>
+				</ul>
+			</ul>
+		</div>
+		 </div>
+		 <div class="products_list_left">
+ 			<ul>
+ 				<li><a href="#">Mics & Wireless</a></li>
+ 				<li><a href="#">Live Sound</a></li>
+ 				<li><a href="#">DJ Lighting</a></li>
+ 				<li><a href="#">Accessories</a></li>
+ 				<li><a href="#">Band & Orchestra</a></li>
+ 				<li><a href="#">Others</a></li>
+ 			</ul>
+ 		</div>
+		 <div class= "products_outlets">
+ 			<ul>
+				<li>OUTLETS</li>
+						<ul>
+							<li><a href="#">Recomended</a></li>
+							<li><a href="#">Discounts</a></li>
+						</ul>
+			</ul>
+		 </div>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-        </div>
-      </section>
+		 <div class= "products_lessons">
+ 			<ul>
+				<li>LESSONS</li>
+					<ul>
+						<li><a href="#">First Steps</a></li>
+						<li><a href="#">Video Lessons</a></li>
+						<li><a href="#">My labs</a></li>
+						<li><a href="#">Guitar Pro</a></li>
+						<li><a href="#">Power Tab</a></li>
+						<li><a href="#">Others</a></li>
+					</ul>
+			</ul>
+		 </div>
+		 <div class= "products_repairs">
+ 			<ul>
+				<li>REPAIRS</li>
+					<ul>
+						<li><a href="#">Condition</a></li>
+						<li><a href="#">Pick Up</a></li>
+					</ul>
+			</ul>
+		</div>
+	<div class=links_social>
+		 <div>
+ 			<ul>
+				<li> GET SOCIAL </li>
+				<div class="social">
+					<a href="#twitter">
+						<i class="fab fa-twitter-square"></i>
+					</a>
+					<a href="#facebook">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="#instagram">
+					<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</ul>
+		 </div>
+		 <div>
+ 			<ul>
+				<li> SECURIYTY </li>
+				<div class="securityl">
+						<img src="img/securuty-01.png" alt="security">
+				</div>
+			</ul>
+		 </div>
+	 </div>
+ </div>
+<!--/footer links-->
+<!--/footer bar-->
+	<div class="blue_bar2">
+		<div class="logo1">
+			<a href="#"><img src="img/logo-16.png" alt="logo"></a>
+		</div>
+		<div class=fotter_links>
+			<ul>
+				<li><a href="#">Cookies</a></li>
+				<li><a href="#">Site Maps</a></li>
+				<li><a href="#">Terms and Conditions</a></li>
+				<li> Copyright 2019 <b>PINK PICK</b> Music Store. All rights reserved</li>
+			</ul>
+		</div>
+	</div>
 
-      <footer>
-        <p>1-5 of 20 products found</p>
-        <nav aria-label="Product Pages">
-          <a href="#" aria-label="Previous page">prev</a>
-          <ol>
-            <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-            <li><a href="#" aria-label="Page 2">2</a></li>
-            <li><a href="#" aria-label="Page 3">3</a></li>
-            <li><a href="#" aria-label="Page 4">4</a></li>
-          </ol>
-          <a href="#" aria-label="Next page">next</a>
-        </nav>
-      </footer>
-    </main>
+</div>
+<!--/Fotter-->
 
-    <footer>
-      <p>&copy; Copyright, 1991.</p>
-      <nav aria-label="Legal">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
-      </ul>
-    </footer>
-
-    <script src="js/index.js"></script>
-  </body>
+</body>
 </html>
