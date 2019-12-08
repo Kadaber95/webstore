@@ -168,25 +168,42 @@
 <!--our products bricks-->
 <div class=bricks>
 <div class=background_text>
-	<div class="line">
-	<p>Guitars > <i>Electric</i></p>
-	<div class="dropdown">
-    <button class="dropbtn">Sort by:
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Brand</a>
-      <a href="#">Price</a>
-      <a href="#">Color</a>
-			<a href="#">Popularity</a>
-    </div>
-  </div>
+	<div class=>
+	<h2>Search</h2>
+	<form class="search" >
+			
+			<fieldset>
+			  <label for="guitarName">Name</label><br>
+			  <input type="text" name="guitar" id="guitarName">
+			</fieldset>
+			<fieldset>
+			  <label>Price (less than)</label> <br>
+			  <label><input type="radio" name="price" value="all" checked> All</label>
+			  
+			<label><input type="radio" name="price" value="1200"> $500</label>
+			  <label><input type="radio" name="price" value="1500"> $1000</label>
+			  <label><input type="radio" name="price" value="2000"> $3000</label>
+			</fieldset>
+			<fieldset>
+			  <label for="guitarBrand">Category</label><br>
+			  <select name="brand" id="guitarbrand">
+				<option value="" selected disabled>-- Search by Brand --</option>
+				<option value="Fender">Fender</option>
+				<option value="Gibson">Gibson</option>
+				<option value="Ibanez">Ibanez</option>
+				<option value="Jackson">Jakcson</option>
+				<option value="Epiphone">Epiphone</option>
+				<option value="B.C Rich">B.C Rich</option>
+			  </select>
+			</fieldset>
+		  </form>
 	</div>
 	<div class=our_product>
-	<h2>Our products</h2>
+	<h2>Our Guitars</h2>
 	</div>
 </div>
 <!--/our products-->
+
 <!--featured product-->
 <div>
 	<div class="productList">
@@ -199,6 +216,7 @@
 			<div class="product_info">
 				<div class="product_text">
 					<h2 class="productTitle text_pink"> Gibson Acustic</h2>
+					<h2>Brand: Gibson</h2>
 					<p class="product_description">The most highly customized Country Western in Gibson’s history.</p>
 					<h6 class="product_sku text_pink">SKU 001</h6>
 					<div class="product_rating">
@@ -232,6 +250,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle text_pink"> Ibanez Electric</h2>
+				<h2>Brand: Ibanez</h2>
 				<p class="product_description">In designing the 2019 line of guitars, Ibanez was determined to restate their classic designs.</p>
 				<h6 class="product_sku text_pink">SKU 002</h6>
 				<div class="product_rating">
@@ -276,6 +295,7 @@
 				<div class="product_info">
 					<div class="product_text">
 						<h2 class="productTitle"> Fender 2008</h2>
+						<h2>Brand: Fender</h2>
 						<p class="product_description">Over the decades, players have been continually inspired by the sound of a Strat.</p>
 						<h6 class="product_sku text_pink">SKU 003</h6>
 						<div class="product_rating">
@@ -290,6 +310,11 @@
 					<div class="product_price">
 						<!-- <h6 class="product_discount">$199.00</h6> -->
 						<p class="Product_Regular">$120.00</p>
+							<fieldset>
+								<label>Fret</label> <br>
+								<label><input type="radio" name="price" value="1500"> 21</label>
+								<label><input type="radio" name="price" value="2000"> 24</label>
+							</fieldset>
 						<button class="gray-button">
 								<a href="#mycart">Add to cart</a>
 						</button>
@@ -308,6 +333,7 @@
 				<div class="product_info">
 					<div class="product_text">
 						<h2 class="productTitle"> Epiphone Red</h2>
+						<h2>Brand: Epiphone</h2>
 						<p class="product_description">Since its introduction almost 20 years ago, The Special-II has met the needs of countless musicians with its combination of Les Paul features, great tone and affordability.</p>
 						<h6 class="product_sku text_pink">SKU 24148853</h6>
 						<div class="product_rating">
@@ -322,6 +348,11 @@
 					<div class="product_price">
 						<!-- <h6 class="product_discount">$199.00</h6> -->
 						<p class="Product_Regular">$310.00</p>
+						<fieldset>
+								<label>Fret</label> <br>
+								<label><input type="radio" name="price" value="1500"> 21</label>
+								<label><input type="radio" name="price" value="2000"> 24</label>
+							</fieldset>
 						<button class="gray-button">
 								<a href="#mycart">Add to cart</a>
 						</button>
@@ -345,6 +376,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle"> B.C Rich Dark</h2>
+				<h2>Brand: B.C Rich</h2>
 				<p class="product_description">Likes its namesake, the Warlock Extreme Chris Kael Electric Bass means business.</p>
 				<h6 class="product_sku text_pink">SKU 005</h6>
 				<div class="product_rating">
@@ -359,6 +391,11 @@
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
 				<p class="Product_Regular">$1,200.00</p>
+				<fieldset>
+						<label>Fret</label> <br>
+						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="2000"> 24</label>
+					</fieldset>
 				<button class="gray-button">
 						<a href="#mycart">Add to cart</a>
 				</button>
@@ -377,6 +414,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle"> Jackson Snow</h2>
+				<h2>Brand: Jackson</h2>
 				<p class="product_description">The Snow model was designed by Jackson in 1976 and was popular from the moment of its release.</p>
 				<h6 class="product_sku text_pink">SKU 006</h6>
 				<div class="product_rating">
@@ -390,7 +428,12 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$560</p>
+				<p class="Product_Regular">$560.00</p>
+				<fieldset>
+						<label>Fret</label> <br>
+						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="2000"> 24</label>
+					</fieldset>
 				<button class="gray-button">
 						<a href="#mycart">Add to cart</a>
 				</button>
@@ -414,6 +457,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle"> Ibanez Nucita</h2>
+				<h2>Brand: Ibanez</h2>
 				<p class="product_description">Ibanez guitars always did things their own way, bringing uniqueness and innovation to guitars in rock and many other styles.</p>
 				<h6 class="product_sku text_pink">SKU 007</h6>
 				<div class="product_rating">
@@ -428,6 +472,11 @@
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
 				<p class="Product_Regular">$99.00</p>
+				<fieldset>
+						<label>Fret</label> <br>
+						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="2000"> 24</label>
+					</fieldset>
 				<button class="gray-button">
 						<a href="#mycart">Add to cart</a>
 				</button>
@@ -446,6 +495,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle"> Gibson Clasic</h2>
+				<h2>Brand: Gibson</h2>
 				<p class="product_description">The J-45 Cutaway acoustic-electric is Gibson’s best-selling acoustic of all time. </p>
 				<h6 class="product_sku text_pink">SKU 008</h6>
 				<div class="product_rating">
@@ -460,6 +510,11 @@
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
 				<p class="Product_Regular">$3,969.00</p>
+				<fieldset>
+						<label>Fret</label> <br>
+						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="2000"> 24</label>
+					</fieldset>
 				<button class="gray-button">
 						<a href="#mycart">Add to cart</a>
 				</button>
@@ -467,7 +522,6 @@
 	</div>
 	<!--end product information container-->
 	</div>
-	<!--04 -END Full Product container-->
 	</div>		
 </div>
 
@@ -484,6 +538,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle"> Fender Neo</h2>
+				<h2>Brand: Fender</h2>
 				<p class="product_description">Combining the look of a classic fender jazz box with some rock-and-roll attitude, the ES-235 semi-hollowbody is ready for the spotlight.</p>
 				<h6 class="product_sku text_pink">SKU 009</h6>
 				<div class="product_rating">
@@ -498,6 +553,11 @@
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
 				<p class="Product_Regular">$2,559.00</p>
+				<fieldset>
+						<label>Fret</label> <br>
+						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="2000"> 24</label>
+					</fieldset>
 				<button class="gray-button">
 						<a href="#mycart">Add to cart</a>
 				</button>
@@ -516,6 +576,7 @@
 		<div class="product_info">
 			<div class="product_text">
 				<h2 class="productTitle"> Les Paul</h2>
+				<h2>Brand: Epiphone</h2>
 				<p class="product_description">his is a limited edition version of Epiphone's number one selling model available with a choice of "worn" finishes.</p>
 				<h6 class="product_sku text_pink">SKU 24148853</h6>
 				<div class="product_rating">
@@ -530,6 +591,11 @@
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
 				<p class="Product_Regular">$181.10</p>
+				<fieldset>
+						<label>Fret</label> <br>
+						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="2000"> 24</label>
+					</fieldset>
 				<button class="gray-button">
 						<a href="#mycart">Add to cart</a>
 				</button>
@@ -579,20 +645,20 @@
 	<div class="links">
 		<div class="products_list">
 			<div class="products_list_right">
-		 <ul>
-			<ul>PRODUCTS</ul>
-				<ul>
-					<li><a href="#">Guitar</a></li>
-					<li><a href="#">Bass</a></li>
-					<li><a href="#">Amps & Efects</a></li>
-					<li><a href="#">Drums</a></li>
-					<li><a href="#">Recording</a></li>
-					<li><a href="#">Software</a></li>
-					<li><a href="#">Keyboards & MIDI</a></li>
-				</ul>
-			</ul>
+			<div>
+				<h2>PRODUCTS</h2>
+					<ul>
+						<li><a href="#">Guitar</a></li>
+						<li><a href="#">Bass</a></li>
+						<li><a href="#">Amps & Efects</a></li>
+						<li><a href="#">Drums</a></li>
+						<li><a href="#">Recording</a></li>
+						<li><a href="#">Software</a></li>
+						<li><a href="#">Keyboards & MIDI</a></li>
+					</ul>
+			</div>
+			</div>
 		</div>
-		 </div>
 		 <div class="products_list_left">
  			<ul>
  				<li><a href="#">Mics & Wireless</a></li>
@@ -604,41 +670,41 @@
  			</ul>
  		</div>
 		 <div class= "products_outlets">
- 			<ul>
-				<li>OUTLETS</li>
-						<ul>
-							<li><a href="#">Recomended</a></li>
-							<li><a href="#">Discounts</a></li>
-						</ul>
-			</ul>
+ 			<div>
+				<h2>OUTLETS</h2>
+					<ul>
+						<li><a href="#">Recomended</a></li>
+						<li><a href="#">Discounts</a></li>
+					</ul>
+			</div>
 		 </div>
 
 		 <div class= "products_lessons">
- 			<ul>
-				<li>LESSONS</li>
-					<ul>
-						<li><a href="#">First Steps</a></li>
-						<li><a href="#">Video Lessons</a></li>
-						<li><a href="#">My labs</a></li>
-						<li><a href="#">Guitar Pro</a></li>
-						<li><a href="#">Power Tab</a></li>
-						<li><a href="#">Others</a></li>
-					</ul>
-			</ul>
+ 			<div>
+				<h2>LESSONS</h2>
+				<ul>
+					<li><a href="#">First Steps</a></li>
+					<li><a href="#">Video Lessons</a></li>
+					<li><a href="#">My labs</a></li>
+					<li><a href="#">Guitar Pro</a></li>
+					<li><a href="#">Power Tab</a></li>
+					<li><a href="#">Others</a></li>
+				</ul>
+			</div>
 		 </div>
 		 <div class= "products_repairs">
- 			<ul>
-				<li>REPAIRS</li>
-					<ul>
-						<li><a href="#">Condition</a></li>
-						<li><a href="#">Pick Up</a></li>
-					</ul>
-			</ul>
+ 			<div>
+			<h2>REPAIRS</h2>
+				<ul>
+					<li><a href="#">Condition</a></li>
+					<li><a href="#">Pick Up</a></li>
+				</ul>
+			</div>
 		</div>
-	<div class=links_social>
+		<div class=links_social>
 		 <div>
- 			<ul>
-				<li> GET SOCIAL </li>
+ 			<div>
+				<h2> GET SOCIAL </h2>
 				<div class="social">
 					<a href="#twitter">
 						<i class="fab fa-twitter-square"></i>
@@ -650,15 +716,15 @@
 					<i class="fab fa-instagram"></i>
 					</a>
 				</div>
-			</ul>
+			</div>
 		 </div>
 		 <div>
- 			<ul>
-				<li> SECURIYTY </li>
+ 			<div>
+				<h2> SECURIYTY </h2>
 				<div class="securityl">
 						<img src="img/securuty-01.png" alt="security">
 				</div>
-			</ul>
+			</div>
 		 </div>
 	 </div>
  </div>

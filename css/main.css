@@ -351,6 +351,27 @@ body{
 	background-size: cover;
 	padding: 5%;
 }
+.search{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+fieldset{
+
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: #ca586b;
+    border-image: initial;
+	background-color: lightgrey;
+}
+
 .background_text{
 	width: 100%;
 	display: flex;
@@ -437,6 +458,7 @@ body{
 	align-self: center;
 	
 }
+
 .productList{
 	padding: 40px 0PX;
 	display: flex;
