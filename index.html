@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+	<script src="js/index.js"></script>
 
 </head>
 <body>
@@ -185,7 +186,7 @@
 			</fieldset>
 			<fieldset>
 			  <label for="guitarBrand">Brand</label><br>
-			  <select name="brand" id="guitarbrand">
+			  <select name="brand" id="guitarBrand">
 				<option value="" selected disabled>-- Search by Brand --</option>
 				<option value="Fender">All</option>
 				<option value="Fender">Fender</option>
@@ -194,6 +195,9 @@
 				<option value="Jackson">Jakcson</option>
 				<option value="Epiphone">Epiphone</option>
 				<option value="B.C Rich">B.C Rich</option>
+
+				<script>filterByBrand(document.)</script>
+
 			  </select>
 			</fieldset>
 		  </form>
@@ -217,7 +221,7 @@
 			<div class="product_info">
 				<div class="product_text">
 					<h2 id=name  class="productTitle text_pink"> Gibson Acustic</h2>
-					<h2 id=brandGibson > Gibson</h2>
+					<h2 id=brandGibson> Gibson</h2>
 					<p id=description class="product_description">The most highly customized Country Western in Gibson’s history.</p>
 					<h6 id=code class="product_sku text_pink">SKU 001</h6>
 					<div id=raiting class="product_rating">
@@ -750,8 +754,8 @@
 
 </div>
 <!--/Fotter-->
-<script src="js/index.js"></script>
 
+<!-- <script>filterByBrand()</script> -->
 
 
 </body>

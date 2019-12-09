@@ -103,7 +103,7 @@ const guitars = [
 
 /************* FUNCTIONS *************/
 
-console.log('guitars'),
+
 /*
 function filterByPrice(guitars) {
     return guitars.price < 1500;
@@ -111,23 +111,35 @@ function filterByPrice(guitars) {
   */
 
 
- //guitars = document.getElementById('guitars')
-
- console.log(document.getElementById('guitars'))
 
   function filterByPrice() {
     // Declare variables
     var guitars = document.getElementById('guitars')
-    
+
     console.log('filterByPrice')
-    /*
+    
     var guitars
     guitars = document.getElementById('guitars')
 
     console.log(guitars)
-
+/*
       document.getElementById('guitarBrand').addEventListener('change', event => checkBrand(event) )
-      */
+  */  
+  }
+
+  function filterByBrand(value) {
+    // Declare variables
+    var guitars = document.getElementById('guitars')
+
+    console.log('filterByBrand')
+    
+    var guitars
+    guitars = document.getElementById('guitars')
+
+    console.log(guitars)
+/*
+      document.getElementById('guitarBrand').addEventListener('change', event => checkBrand(event) )
+  */  
   }
 
   /*
@@ -138,3 +150,6 @@ function filterByPrice(guitars) {
     renderCourses(onlyMatchingBrand);
   }
 */
+
+filterByBrand()
+filterByPrice()
