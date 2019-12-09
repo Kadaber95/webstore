@@ -112,14 +112,19 @@ function filterByPrice(guitars) {
 
 
 
-  function filterByPrice() {
+  function filterByPrice(event) {
     // Declare variables
     var guitars = document.getElementById('guitars')
 
+    console.log(guitars)
+
     console.log('filterByPrice')
-    
-    var guitars
-    guitars = document.getElementById('guitars')
+    const userIsLookingFor = event.target.value;
+
+    console.log(userIsLookingFor)
+
+   guitars.filter(guitars => guitars.price == userIsLookingFor);
+
 
     console.log(guitars)
 /*
@@ -127,9 +132,17 @@ function filterByPrice(guitars) {
   */  
   }
 
-  function filterByBrand(value) {
+  function filterByBrand(event) {
     // Declare variables
+
     var guitars = document.getElementById('guitars')
+
+    console.log('filterByBrand')
+    const userIsLookingFor = event.target.value;
+
+    console.log(userIsLookingFor)
+
+   guitars.filter(guitars => guitars.brand == userIsLookingFor);
 
     console.log('filterByBrand')
     
@@ -137,9 +150,8 @@ function filterByPrice(guitars) {
     guitars = document.getElementById('guitars')
 
     console.log(guitars)
-/*
-      document.getElementById('guitarBrand').addEventListener('change', event => checkBrand(event) )
-  */  
+
+ 
   }
 
   /*
@@ -151,5 +163,18 @@ function filterByPrice(guitars) {
   }
 */
 
-filterByBrand()
-filterByPrice()
+
+
+var guitarBrand = document.getElementById('guitarBrand');
+if(guitarBrand){
+    guitarBrand.addEventListener('change', event => filterByBrand(event) )
+}else{
+    console.log('ni mierda')
+}
+
+var guitarPrice = document.getElementById('guitarPrice');
+if(guitarPrice){
+    guitarPrice.addEventListener('change', event => filterByPrice(event) )
+}else{
+    console.log('ni mierda')
+}
