@@ -20,7 +20,7 @@
 	<!--information bar-->
 	<div class="information_bar">
 		<div class="date">
-			<time datetime="2019-04-18"> April 18, 2019 </time>
+			<time datetime="2019-04-18"> December 09, 2019 </time>
 		</div>
 		<div class="privacy_container">
 			<ul>
@@ -168,26 +168,26 @@
 <!--our products bricks-->
 <div class=bricks>
 <div class=background_text>
-	<div class=>
+	<div class="" >
 	<h2>Search</h2>
 	<form class="search" >
 			
-			<fieldset>
+			<!--<fieldset>
 			  <label for="guitarName">Name</label><br>
 			  <input type="text" name="guitar" id="guitarName">
-			</fieldset>
-			<fieldset>
+			</fieldset>-->
+			<fieldset >
 			  <label>Price (less than)</label> <br>
-			  <label><input type="radio" name="price" value="all" checked> All</label>
-			  
+			  <label><input type="radio" name="price" value="all" checked> All</label>  
 			<label><input type="radio" name="price" value="1200"> $500</label>
 			  <label><input type="radio" name="price" value="1500"> $1000</label>
 			  <label><input type="radio" name="price" value="2000"> $3000</label>
 			</fieldset>
 			<fieldset>
-			  <label for="guitarBrand">Category</label><br>
+			  <label for="guitarBrand">Brand</label><br>
 			  <select name="brand" id="guitarbrand">
 				<option value="" selected disabled>-- Search by Brand --</option>
+				<option value="Fender">All</option>
 				<option value="Fender">Fender</option>
 				<option value="Gibson">Gibson</option>
 				<option value="Ibanez">Ibanez</option>
@@ -205,21 +205,22 @@
 <!--/our products-->
 
 <!--featured product-->
+<div id=guitars>
 <div>
 	<div class="productList">
 		<!--Product1-->
-		<div class="Product">
+		<div id= guitar1 class="Product">
 				<a href="product.html">
 				<img class="productImg" src="img/guitar01.jpg"  alt="icon"> </a>
 			<hr class="divider">
 			<!--product information container-->
 			<div class="product_info">
 				<div class="product_text">
-					<h2 class="productTitle text_pink"> Gibson Acustic</h2>
-					<h2>Brand: Gibson</h2>
-					<p class="product_description">The most highly customized Country Western in Gibson’s history.</p>
-					<h6 class="product_sku text_pink">SKU 001</h6>
-					<div class="product_rating">
+					<h2 id=name  class="productTitle text_pink"> Gibson Acustic</h2>
+					<h2 id=brandGibson > Gibson</h2>
+					<p id=description class="product_description">The most highly customized Country Western in Gibson’s history.</p>
+					<h6 id=code class="product_sku text_pink">SKU 001</h6>
+					<div id=raiting class="product_rating">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -229,8 +230,8 @@
 				</div>
 				<!---->
 				<div class="product_price">
-					<h6 class="product_discount">$250.00</h6>
-					<p class="Product_Regular text_pink">$199.00</p>
+					<h6 id=oldPrice class="product_discount">$250.00</h6>
+					<p id=price class="Product_Regular text_pink">$199.00</p>
 					<a href="#mycart">
 					<button class="pink-button">
 						Add to cart
@@ -242,33 +243,35 @@
 	</div>
 	<!--01 -END product1-->
 	<!--Product2-->
-	<div class="Product">
+	<div id=guitar2 class="Product">
 		<a href="product2.html">
 		<img class="productImg" src="img/guitar02.jpg" alt="guitar" > </a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
-			<div class="product_text">
-				<h2 class="productTitle text_pink"> Ibanez Electric</h2>
-				<h2>Brand: Ibanez</h2>
-				<p class="product_description">In designing the 2019 line of guitars, Ibanez was determined to restate their classic designs.</p>
-				<h6 class="product_sku text_pink">SKU 002</h6>
-				<div class="product_rating">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="far fa-star"></i>
-					<i class="far fa-star"></i>
-			</div>
-			</div>
-			<!---->
-			<div class="product_price">
-				<h6 class="product_discount">$320.00</h6>
-				<p class="Product_Regular text_pink">$249.99</p>
-				<button class="pink-button">
-						<a href="#mycart">Add to cart</a>
-				</button>
-			</div>
+				<div class="product_text">
+					<h2 id=name class="productTitle text_pink"> Ibanez Electric</h2>
+					<h2 id=BrandIbanez> Ibanez</h2>
+					<p id=description class="product_description">In designing the 2019 line of guitars, Ibanez was determined to reestate thir classic designs.</p>
+					<h6 id=code class="product_sku text_pink">SKU 002</h6>
+					<div id=raiting class="product_rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+				</div>
+				</div>
+				<!---->
+				<div class="product_price">
+					<h6 id=oldPrice class="product_discount">$350.00</h6>
+					<p id=price class="Product_Regular text_pink">$299.00</p>
+					<a href="#mycart">
+					<button class="pink-button">
+						Add to cart
+					</button>
+					</a>
+				</div>
 		</div>
 		<!--end product information container-->
 		</div>
@@ -278,7 +281,7 @@
 	</div>
 </div>
 <!--/featured product-->
-</div>
+
 <!--END our products bricks-->
 
 <!--our products beige-->
@@ -287,18 +290,18 @@
 <div>
 		<div class="product_catalogue">
 			<!--Product3-->
-			<div class="Product">
+			<div id=guitar3 class="Product">
 				<a href="product3.html">
 				<img class="productImg" src="img/guitar03.jpg"  alt="guitar"></a>
 				<hr class="divider">
 				<!--product information container-->
 				<div class="product_info">
 					<div class="product_text">
-						<h2 class="productTitle"> Fender 2008</h2>
-						<h2>Brand: Fender</h2>
-						<p class="product_description">Over the decades, players have been continually inspired by the sound of a Strat.</p>
-						<h6 class="product_sku text_pink">SKU 003</h6>
-						<div class="product_rating">
+						<h2 id=name class="productTitle"> Fender 2008</h2>
+						<h2 id=brandFender>Brand: Fender</h2>
+						<p id= description class="product_description">Over the decades, players have been continually inspired by the sound of a Strat.</p>
+						<h6 id=code class="product_sku text_pink">SKU 003</h6>
+						<div id=raiting class="product_rating">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
@@ -309,10 +312,10 @@
 					<!---->
 					<div class="product_price">
 						<!-- <h6 class="product_discount">$199.00</h6> -->
-						<p class="Product_Regular">$120.00</p>
+						<p id=price class="Product_Regular">$120.00</p>
 							<fieldset>
 								<label>Fret</label> <br>
-								<label><input type="radio" name="price" value="1500"> 21</label>
+								<label><input type="radio" name="price" value="1500"> 21</label> <br>
 								<label><input type="radio" name="price" value="2000"> 24</label>
 							</fieldset>
 						<button class="gray-button">
@@ -325,18 +328,18 @@
 			<!--03 -END Full Product container-->
 
 			<!--04 Full Product container-->
-			<div class="Product">
+			<div id=guitar4 class="Product">
 				<a href="product4.html">
 				<img class="productImg" src="img/guitar04.jpg" alt="guitar" > </a>
 				<hr class="divider">
 				<!--product information container-->
 				<div class="product_info">
 					<div class="product_text">
-						<h2 class="productTitle"> Epiphone Red</h2>
-						<h2>Brand: Epiphone</h2>
-						<p class="product_description">Since its introduction almost 20 years ago, The Special-II has met the needs of countless musicians with its combination of Les Paul features, great tone and affordability.</p>
-						<h6 class="product_sku text_pink">SKU 24148853</h6>
-						<div class="product_rating">
+						<h2 id=name class="productTitle"> Epiphone Red</h2>
+						<h2 id=brandEpiphone >Brand: Epiphone</h2>
+						<p id=description class="product_description">Since its introduction almost 20 years ago, The Special-II has met the needs of countless musicians with its combination of Les Paul features, great tone and affordability.</p>
+						<h6 id=code class="product_sku text_pink">SKU 24148853</h6>
+						<div id=raiting class="product_rating">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
@@ -347,10 +350,10 @@
 					<!---->
 					<div class="product_price">
 						<!-- <h6 class="product_discount">$199.00</h6> -->
-						<p class="Product_Regular">$310.00</p>
+						<p id=price class="Product_Regular">$310.00</p>
 						<fieldset>
 								<label>Fret</label> <br>
-								<label><input type="radio" name="price" value="1500"> 21</label>
+								<label><input type="radio" name="price" value="1500"> 21</label> <br>
 								<label><input type="radio" name="price" value="2000"> 24</label>
 							</fieldset>
 						<button class="gray-button">
@@ -368,18 +371,18 @@
 <div>
 	<div class="product_catalogue">
 	<!--03 Full Product container-->
-	<div class="Product">
+	<div id= guitar5 class="Product">
 		<a href="product3.html">
 		<img class="productImg" src="img/guitar05.jpg" alt="guitar"></a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
 			<div class="product_text">
-				<h2 class="productTitle"> B.C Rich Dark</h2>
-				<h2>Brand: B.C Rich</h2>
-				<p class="product_description">Likes its namesake, the Warlock Extreme Chris Kael Electric Bass means business.</p>
-				<h6 class="product_sku text_pink">SKU 005</h6>
-				<div class="product_rating">
+				<h2 id=name class="productTitle"> B.C Rich Dark</h2>
+				<h2 id=brandBCRich >Brand: B.C Rich</h2>
+				<p id= description class="product_description">Likes its namesake, the Warlock Extreme Chris Kael Electric Bass means business.</p>
+				<h6 id=code class="product_sku text_pink">SKU 005</h6>
+				<div id=raiting class="product_rating">
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
@@ -390,10 +393,10 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$1,200.00</p>
+				<p id=price class="Product_Regular">$1,200.00</p>
 				<fieldset>
 						<label>Fret</label> <br>
-						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="1500"> 21</label> <br>
 						<label><input type="radio" name="price" value="2000"> 24</label>
 					</fieldset>
 				<button class="gray-button">
@@ -406,18 +409,18 @@
 	<!--03 -END Full Product container-->
 
 	<!--04 Full Product container-->
-	<div class="Product">
+	<div id= guitar6 class="Product">
 		<a href="product4.html">
 		<img class="productImg" src="img/guitar06.jpg" alt="guitar"> </a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
 			<div class="product_text">
-				<h2 class="productTitle"> Jackson Snow</h2>
-				<h2>Brand: Jackson</h2>
-				<p class="product_description">The Snow model was designed by Jackson in 1976 and was popular from the moment of its release.</p>
-				<h6 class="product_sku text_pink">SKU 006</h6>
-				<div class="product_rating">
+				<h2 id=name class="productTitle"> Jackson Snow</h2>
+				<h2 id=brandJackson>Brand: Jackson</h2>
+				<p id=description class="product_description">The Snow model was designed by Jackson in 1976 and was popular from the moment of its release.</p>
+				<h6 id=code class="product_sku text_pink">SKU 006</h6>
+				<div id=raiting class="product_rating">
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
@@ -428,10 +431,10 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$560.00</p>
+				<p id=price class="Product_Regular">$560.00</p>
 				<fieldset>
 						<label>Fret</label> <br>
-						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="1500"> 21</label> <br>
 						<label><input type="radio" name="price" value="2000"> 24</label>
 					</fieldset>
 				<button class="gray-button">
@@ -449,18 +452,18 @@
 <div>
 	<div class="product_catalogue">
 	<!--03 Full Product container-->
-	<div class="Product">
+	<div id= guitar7 class="Product">
 		<a href="product3.html">
 		<img class="productImg" src="img/guitar02.jpg" alt="guitar"></a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
 			<div class="product_text">
-				<h2 class="productTitle"> Ibanez Nucita</h2>
-				<h2>Brand: Ibanez</h2>
-				<p class="product_description">Ibanez guitars always did things their own way, bringing uniqueness and innovation to guitars in rock and many other styles.</p>
-				<h6 class="product_sku text_pink">SKU 007</h6>
-				<div class="product_rating">
+				<h2 id=name class="productTitle"> Ibanez Nucita</h2>
+				<h2 id=brandIbanez>Brand: Ibanez</h2>
+				<p brand=description class="product_description">Ibanez guitars always did things their own way, bringing uniqueness and innovation to guitars in rock and many other styles.</p>
+				<h6 id=code class="product_sku text_pink">SKU 007</h6>
+				<div id=raiting class="product_rating">
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
@@ -471,10 +474,10 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$99.00</p>
+				<p id=price class="Product_Regular">$99.00</p>
 				<fieldset>
 						<label>Fret</label> <br>
-						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="1500"> 21</label> <br>
 						<label><input type="radio" name="price" value="2000"> 24</label>
 					</fieldset>
 				<button class="gray-button">
@@ -487,18 +490,18 @@
 	<!--03 -END Full Product container-->
 
 	<!--04 Full Product container-->
-	<div class="Product">
+	<div  id= guitar8 class="Product">
 		<a href="product4.html">
 		<img class="productImg" src="img/guitar01.jpg" alt="guitar"> </a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
 			<div class="product_text">
-				<h2 class="productTitle"> Gibson Clasic</h2>
-				<h2>Brand: Gibson</h2>
-				<p class="product_description">The J-45 Cutaway acoustic-electric is Gibson’s best-selling acoustic of all time. </p>
-				<h6 class="product_sku text_pink">SKU 008</h6>
-				<div class="product_rating">
+				<h2 id=name class="productTitle"> Gibson Clasic</h2>
+				<h2 id=brandGibson>Brand: Gibson</h2>
+				<p id=description class="product_description">The J-45 Cutaway acoustic-electric is Gibson’s best-selling acoustic of all time. </p>
+				<h6 id=code class="product_sku text_pink">SKU 008</h6>
+				<div id=raiting class="product_rating">
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
@@ -509,10 +512,10 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$3,969.00</p>
+				<p id=price class="Product_Regular">$3,969.00</p>
 				<fieldset>
 						<label>Fret</label> <br>
-						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="1500"> 21</label> <br>
 						<label><input type="radio" name="price" value="2000"> 24</label>
 					</fieldset>
 				<button class="gray-button">
@@ -530,16 +533,16 @@
 <div>
 	<div class="product_catalogue">
 	<!--03 Full Product container-->
-	<div class="Product">
+	<div id= guitar9 class="Product">
 		<a href="product3.html">
 		<img class="productImg" src="img/guitar03.jpg" alt="guitar"></a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
 			<div class="product_text">
-				<h2 class="productTitle"> Fender Neo</h2>
-				<h2>Brand: Fender</h2>
-				<p class="product_description">Combining the look of a classic fender jazz box with some rock-and-roll attitude, the ES-235 semi-hollowbody is ready for the spotlight.</p>
+				<h2 id=name class="productTitle"> Fender Neo</h2>
+				<h2 id=brandFender>Brand: Fender</h2>
+				<p id=description class="product_description">Combining the look of a classic fender jazz box with some rock-and-roll attitude, the ES-235 semi-hollowbody is ready for the spotlight.</p>
 				<h6 class="product_sku text_pink">SKU 009</h6>
 				<div class="product_rating">
 					<i class="fas fa-star"></i>
@@ -552,10 +555,10 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$2,559.00</p>
+				<p  id=price class="Product_Regular">$2,559.00</p>
 				<fieldset>
 						<label>Fret</label> <br>
-						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="1500"> 21</label> <br>
 						<label><input type="radio" name="price" value="2000"> 24</label>
 					</fieldset>
 				<button class="gray-button">
@@ -568,18 +571,18 @@
 	<!--03 -END Full Product container-->
 
 	<!--04 Full Product container-->
-	<div class="Product">
+	<div id= guitar10 class="Product">
 		<a href="product4.html">
 		<img class="productImg" src="img/guitar04.jpg" alt="guitar"> </a>
 		<hr class="divider">
 		<!--product information container-->
 		<div class="product_info">
 			<div class="product_text">
-				<h2 class="productTitle"> Les Paul</h2>
-				<h2>Brand: Epiphone</h2>
-				<p class="product_description">his is a limited edition version of Epiphone's number one selling model available with a choice of "worn" finishes.</p>
-				<h6 class="product_sku text_pink">SKU 24148853</h6>
-				<div class="product_rating">
+				<h2 id=name class="productTitle"> Les Paul</h2>
+				<h2 id=brandEpiphone >Brand: Epiphone</h2>
+				<p id=description class="product_description">his is a limited edition version of Epiphone's number one selling model available with a choice of "worn" finishes.</p>
+				<h6 id=code class="product_sku text_pink">SKU 24148853</h6>
+				<div id=raiting class="product_rating">
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
@@ -590,10 +593,10 @@
 			<!---->
 			<div class="product_price">
 				<!-- <h6 class="product_discount">$199.00</h6> -->
-				<p class="Product_Regular">$181.10</p>
+				<p id=price class="Product_Regular">$181.10</p>
 				<fieldset>
 						<label>Fret</label> <br>
-						<label><input type="radio" name="price" value="1500"> 21</label>
+						<label><input type="radio" name="price" value="1500"> 21</label> <br>
 						<label><input type="radio" name="price" value="2000"> 24</label>
 					</fieldset>
 				<button class="gray-button">
@@ -605,6 +608,7 @@
 	</div>
 	<!--04 -END Full Product container-->
 	</div>		
+</div>
 </div>
 </div>
 <!--/featured product-->
@@ -747,6 +751,8 @@
 </div>
 <!--/Fotter-->
 <script src="js/index.js"></script>
+
+
 
 </body>
 </html>

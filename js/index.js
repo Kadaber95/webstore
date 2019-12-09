@@ -1,5 +1,6 @@
+ /*
 const saleGuitars=[
-
+    
 {
     name: 'Gibson Acustic',
     description: 'The most highly customized Country Western in Gibson’s history.',
@@ -7,9 +8,10 @@ const saleGuitars=[
     brand: 'Gibson',
     raiting: '4.0',
     oldPrice: '250',
-    newprice: '199.00',
+    price: '199.00',
     img: 'img/guitar01.jpg',
 },
+
 {
     name: 'Ibanez Electric',
     description: 'In designing the 2019 line of guitars, Ibanez was determined to restate their classic designs.',
@@ -17,12 +19,12 @@ const saleGuitars=[
     brand: 'Ibanez',
     raiting: '3.0',
     oldPrice: '320',
-    newprice: '249.99',
+    price: '249.99',
     img: 'img/guitar02.jpg'
 }
 ]
 const guitars = [
-    
+      
     {
         name: 'Fender 2008',
         description: 'Over the decades, players have been continually inspired by the sound of a Strat.',
@@ -33,6 +35,7 @@ const guitars = [
         img: 'img/guitar03.jpg'
 
     },
+    
     {
         name: 'Epiphone Red',
         description: 'Since its introduction almost 20 years ago, The Special-II has met the needs of countless musicians with its combination of Les Paul features, great tone and affordability.',
@@ -97,3 +100,41 @@ const guitars = [
         img: 'img/guitar04.jpg'
     }
 ]
+
+/************* FUNCTIONS *************/
+
+console.log('guitars'),
+/*
+function filterByPrice(guitars) {
+    return guitars.price < 1500;
+  }
+  */
+
+
+ //guitars = document.getElementById('guitars')
+
+ console.log(document.getElementById('guitars'))
+
+  function filterByPrice() {
+    // Declare variables
+    var guitars = document.getElementById('guitars')
+    
+    console.log('filterByPrice')
+    /*
+    var guitars
+    guitars = document.getElementById('guitars')
+
+    console.log(guitars)
+
+      document.getElementById('guitarBrand').addEventListener('change', event => checkBrand(event) )
+      */
+  }
+
+  /*
+  function checkBrand(event) {
+    const userIsLookingFor = event.target.value;
+  
+    const onlyMatchingBrands = courses.filter(prod => prod.brand == userIsLookingFor);
+    renderCourses(onlyMatchingBrand);
+  }
+*/
